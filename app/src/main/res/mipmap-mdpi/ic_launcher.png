@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".AppGuidActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            >
+            <com.joanzapata.pdfview.PDFView
+                android:id="@+id/PDFView"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="510dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/resourcelyt"
+                android:layout_below="@id/PDFView"
+                >
+
+                <TextView
+                    android:id="@+id/Resource_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="منابع برنامه"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22dp"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ResourceLink1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+        
