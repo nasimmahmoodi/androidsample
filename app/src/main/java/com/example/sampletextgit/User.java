@@ -6,6 +6,8 @@ public class User
     private String password;
     private String email;
 
+    private int Age;
+
 
     public String getUsername() {
         return username;
@@ -29,5 +31,13 @@ public class User
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int age) {
+        Age = age;
     }
 }

@@ -22,18 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void SaveUser_OnClick(View view)
     {
-        User user=new User();
-        user.setUsername(username.getText().toString());
-        user.setPassword(password.getText().toString());
-        user.setEmail(email.getText().toString());
-
         Intent mIntent=new Intent(MainActivity.this,ShowUserInfo.class);
         Bundle bundle=new Bundle();
-        bundle.putString("username",user.getUsername());
+        bundle.putString("username",username.getText().toString());
         mIntent.putExtras(bundle);
         startActivity(mIntent);
-
-
-
     }
 }
